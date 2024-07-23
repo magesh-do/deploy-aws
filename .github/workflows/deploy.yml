@@ -31,5 +31,5 @@ jobs:
           username: ${{ secrets.USERNAME || 'ubuntu' }}
           key: ${{ secrets.KEY }}
           port: ${{ secrets.PORT || 22 }}
-          source: "build/*"
+          source: "build"
           target: /home/ubuntu/deploy-aws
