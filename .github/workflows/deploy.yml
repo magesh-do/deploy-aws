@@ -28,7 +28,7 @@ jobs:
         uses: appleboy/scp-action@v0.1.7
         with:
           host: ${{ secrets.HOST }}
-          username: ${{ secrets.USERNAME || 'root' }}
+          username: ${{ secrets.USERNAME || 'ubuntu' }}
           key: ${{ secrets.KEY }}
           port: ${{ secrets.PORT || 22 }}
           source: "build"
